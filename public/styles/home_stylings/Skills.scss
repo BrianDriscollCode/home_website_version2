@@ -1,0 +1,33 @@
+#skills_container {
+
+    background-color: $main_color;
+
+}
+
+#skills_container h2 {
+
+    margin-top: 0px;
+
+}
+
+#skills_wrapper {
+
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+
+}   
+
+#technologies_wrapper {
+
+    @include flex_direction_align_justify(row, none, center);
+    flex-wrap: wrap;
+
+}
+
+
+.skill_icon {
+
+    @include flex_direction_align_justify(column, center, center);
+
+}

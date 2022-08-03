@@ -1,0 +1,22 @@
+/* 
+Main Break Points for Media Queries
+1448px | 1182px | 992px | 844px | 620px
+******************************************
+Common stylings used for different pages end with _
+Example: #page_button_
+******************************************
+Mixins stored in this file
+*/
+body {
+  font-family: "Crimson Pro", serif;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}/*# sourceMappingURL=base_stylings_.css.map */

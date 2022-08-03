@@ -1,0 +1,56 @@
+$main_color: #EBD6AD;
+$secondary_color: #313E50;
+$color_1: #8092AA;
+$color_2: #D98B4D;
+$color_3: #D76C6C;
+$color_4: #315D87;
+$color_5: #EFD56C;
+$color_6: #D12749;
+$color_7: #F4F4F4;
+
+/* 
+Main Break Points for Media Queries
+1448px | 1182px | 992px | 844px | 620px
+******************************************
+Common stylings used for different pages end with _
+Example: #page_button_
+******************************************
+Mixins stored in this file
+*/
+
+
+
+@mixin flex_direction_align_justify($direction, $align, $justify) {
+
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+
+}
+
+@mixin flex_row_or_column($row_or_column) {
+
+    display: flex;
+    flex-direction: $row_or_column;
+
+}
+
+body {
+
+    font-family: 'Crimson Pro', serif;
+    height: 100%;
+    margin: 0;
+
+}
+
+html {
+
+    height: 100%;
+
+}
+
+#root {
+
+    height: 100%;
+}

@@ -1,0 +1,116 @@
+/* 
+Main Break Points for Media Queries
+1448px | 1182px | 992px | 844px | 620px
+******************************************
+Common stylings used for different pages end with _
+Example: #page_button_
+******************************************
+Mixins stored in this file
+*/
+body {
+  font-family: "Crimson Pro", serif;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+#nav {
+  background-color: #313E50;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+#nav a {
+  color: white;
+}
+
+#nav_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 9em;
+  height: 100%;
+}
+
+.nav_link {
+  text-decoration: none;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 0px 40px 0px 40px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #D76C6C;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 10;
+  left: 16%;
+  background-color: #D76C6C;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+#hamburger_menu {
+  position: absolute;
+  display: none;
+}
+
+/** hamburger activated **/
+.menu_lengthen {
+  height: 800px !important;
+}
+
+/** Media Queries **/
+@media only screen and (max-width: 1250px) {
+  #nav_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+    background-color: #313E50;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #nav_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #hamburger_menu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    z-index: 100;
+  }
+}/*# sourceMappingURL=nav.css.map */
