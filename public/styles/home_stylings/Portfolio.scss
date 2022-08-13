@@ -1,0 +1,173 @@
+#portfolio_section {
+
+    background-color: $color_4;
+}
+
+#portfolio_wrapper {
+
+    width: 65%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#portfolio_wrapper h2 {
+
+    color: $main_color;
+    font-size: 50px;
+    margin-bottom: 0px;
+
+}
+
+#portfolio_wrapper h3 {
+
+    color: $color_5;
+    font-size: 24px;
+
+}
+
+.portfolio_entry {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto 60px auto;
+
+}
+
+.portfolio_entry_reverse {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 0 auto 60px auto;
+
+}
+
+.portfolio_text h4 {
+
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: $color_3;
+
+}
+
+.portfolio_text p {
+
+    font-size: 20px;
+    color: #f4f4f4;
+
+}
+
+.portfolio_tech {
+
+    font-size: 20px;
+    color: #f4f4f4;
+
+}
+
+.portfolio_image {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.portfolio_buttons {
+
+    margin-top: 20px;
+
+}
+
+.portfolio_buttons button {
+
+    background-color: $color_6;
+    padding: 18px 45px 18px 45px;
+    border: 0px;
+    border-radius: 10px;
+    color: #f4f4f4;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.portfolio_buttons button:nth-child(2) {
+
+    margin-left: 20px;
+
+}
+
+
+/** Media Queries **/
+
+@media only screen and (max-width: 1448px) {
+
+    #portfolio_wrapper {
+
+        width: 85%;
+
+    }
+    
+}
+
+@media only screen and (max-width: 1182px) {
+
+    #portfolio_wrapper {
+
+        width: 95%;
+
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 992px) {
+
+
+    .portfolio_entry {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .portfolio_entry_reverse {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .portfolio_image {
+
+        align-self: center;
+    
+    }
+
+    .portfolio_text {
+
+        text-align: center;
+
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 844px) {
+
+
+}
+
+@media only screen and (max-width: 620px) {
+
+    .portfolio_image img {
+
+        width: 380px !important;
+
+    }
+
+}

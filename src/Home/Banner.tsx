@@ -37,13 +37,21 @@ const Banner = () => {
 
             <Nav />
 
+            <div id="tree_branch">
+                <img src="/images/tree_branch.png"  width="250" />
+            </div>
+
             <div id="banner_wrapper">
 
                 <h1> 
 
-                    <span className="banner_title"> Hi, I'm Brian! </span>
-                    <span className="banner_title"> I'm a <span id="banner_bold"> Marketer turned Developer </span> </span>
-                    <span className="banner_title"> {"and a "}
+                    <span className="banner_title" id="first_banner_line"> Hi, I'm Brian! </span>
+                    {"I'm a "}  
+                        <span className="banner_title"> 
+                            <span id="banner_bold"> Marketer turned Developer </span> 
+                        </span>
+                    {"and a "} 
+                        <span className="banner_title"> 
                             <span id="banner_switcher"> 
                                 <span 
                                     id="banner_choice_1"
@@ -54,7 +62,7 @@ const Banner = () => {
                                         transition: 'opacity 1s, transform 1s'
                                     }}
                                 > 
-                                    coffee addict. <SiBuymeacoffee size={50}/> 
+                                    coffee addict. <SiBuymeacoffee className="banner_image" size={35}/> 
                                 </span>
                                 <span 
                                     id="banner_choice_2"
@@ -65,7 +73,7 @@ const Banner = () => {
                                         transition: 'opacity 1s, transform 1s'
                                     }}
                                 > 
-                                    fitness enthusiast. <GiWeightLiftingUp size={50} />
+                                    fitness enthusiast. <GiWeightLiftingUp className="banner_image" size={35} />
                                 </span>
                                 <span 
                                     id="banner_choice_3"
@@ -76,7 +84,7 @@ const Banner = () => {
                                         transition: 'opacity 1s, transform 1s'
                                     }}
                                 > 
-                                    problem tackler. <GiMonkeyWrench size={50} />
+                                    problem tackler. <GiMonkeyWrench className="banner_image" size={35} />
                                 </span>
                                 <span 
                                     id="banner_choice_4"
@@ -87,13 +95,17 @@ const Banner = () => {
                                         transition: 'opacity 1s, transform 1s'
                                     }}
                                 > 
-                                    book nerd. <SiGitbook size={50} />
+                                    book nerd. <SiGitbook className="banner_image" size={35} />
                                 </span>
                             </span> 
                     </span>
 
                 </h1>
 
+            </div>
+
+            <div id="coffee_cup">
+                <img src="/images/coffee_cup.png"  width="125" />
             </div>
 
         </header>

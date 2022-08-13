@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Angle_Element from "./Angle_Element";
 import About from "./About";
 import Skills from "./Skills";
+import Portfolio from "./Portfolio";
 
 const Home = () => {
 
@@ -16,7 +17,8 @@ const Home = () => {
             <About />
             <Angle_Element id1={"angle2"} id2={"inner_angle2"}/>
             <Skills />
-            
+            <Angle_Element id1={"angle3"} id2={"inner_angle3"} />
+            <Portfolio />
     
         </div>
 

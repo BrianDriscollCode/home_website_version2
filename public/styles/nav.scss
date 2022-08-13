@@ -2,7 +2,7 @@
 
 #nav {
 
-    background-color: $secondary_color;
+    background-color: rgb(49, 62, 80, 0.9);
     height: 80px;
     position: fixed;
     width: 100%;
@@ -69,6 +69,19 @@
 
   }
 
+  #enable_opacity {
+
+    opacity: 1 !important;
+    transition: opacity 1s;
+
+  }
+
+  #disable_opacity {
+
+    opacity: 1;
+
+  }
+
 /** hamburger activated **/
 
 .menu_lengthen {
@@ -82,6 +95,7 @@
 @media only screen and (max-width: 1448px) {
 
 
+
 }
 
 @media only screen and (max-width: 1250px) {
@@ -92,8 +106,6 @@
 
     @include flex_direction_align_justify(row, center, center);
     padding-right: 0;
-    background-color: $secondary_color;
-
 
   }    
 
@@ -103,13 +115,19 @@
 @media only screen and (max-width: 1182px) {
 
 
+
+
 }
 
 @media only screen and (max-width: 992px) {
 
+
+
   #nav_wrapper {
 
-    @include flex_direction_align_justify(column, center, center)
+    @include flex_direction_align_justify(column, center, center);
+    transition: height 1s, opacity 1s;
+    background-color: rgb(49, 62, 80, 0.9);
 
   }
 
@@ -124,6 +142,21 @@
     z-index: 100;
 
   }
+
+  .nav_link {
+
+    opacity: 0;
+    padding-bottom: 40px;
+
+  }
+
+  #disable_opacity {
+
+    opacity: 0 !important;
+
+
+  }
+  
 
 }
 

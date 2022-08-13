@@ -44,7 +44,30 @@ const About = () => {
 
                 </div>
 
+                <div className="portfolio_explanation" id="videos">
+
+                    <div id="portfolio_video">
+                        
+                        <h2> My Coding YouTube Channel!  </h2>
+
+                        <div className="iframe_container">
+                            <iframe 
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/DbJX3OQSdAI"
+                                title="YouTube video player" 
+                                className="video_iframe"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>'
+                            </iframe>
+                        </div>
+                        
+
+                    </div>
+
             </div>
+
+            </div>
+
 
         </div>
 

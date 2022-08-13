@@ -2,24 +2,25 @@
 
     background-color: $color_3;
     height: 500px;
-    color: white;
+    color: $color_7;
 
 }
 
 #banner_wrapper {
 
     height: 100%;
-    @include flex_direction_align_justify(none, center, center);
-
+    @include flex_direction_align_justify(none, none, center);
+    padding-top: 10em;
 }
 
 #banner_wrapper h1 {
 
     margin: 0;
-    @include flex_row_or_column(column);
     font-size: 60px;
     font-weight: 500;
-    padding-top: 2em;
+    padding-top: 1em;
+    padding-right: 1em;
+    width: 650px;
 
 }
 
@@ -29,6 +30,12 @@
 
 }
 
+#first_banner_line {
+
+    display: inline-block;
+    width: 100%;
+
+}
 
 #banner_bold {
 
@@ -82,6 +89,23 @@
 
 }
 
+/*images*/
+
+#tree_branch {
+
+    position: absolute;
+
+}
+
+#coffee_cup {
+
+    position: relative;
+    right:0;
+    bottom: 0em;
+    z-index: 10;
+
+}
+
 /** Media Queries **/
 
 @media only screen and (max-width: 1448px) {
@@ -89,15 +113,22 @@
     
 }
 
+@media only screen and (max-width: 1182px) {
+
+    #banner_wrapper h1 {
+
+        font-size: 45px;
+      
+    }
+    
+
+}
+
 @media only screen and (max-width: 992px) {
 
 
 }
 
-@media only screen and (max-width: 1182px) {
-
-
-}
 
 @media only screen and (max-width: 844px) {
 
@@ -106,6 +137,23 @@
 
 @media only screen and (max-width: 620px) {
 
+    #banner_wrapper h1 {
+
+        font-size: 35px;
+
+    }
+
+    #banner_switcher {
+
+        width: 250px;
+
+    }
+
+    .banner_image {
+
+        font-size: 20;
+
+    }
     
 
 }

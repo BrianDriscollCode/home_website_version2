@@ -6,7 +6,25 @@
 
 #skills_container h2 {
 
+    font-size: 35px;
     margin-top: 0px;
+    margin-bottom: 20px;
+    color: $color_8;
+
+}
+
+#skills_container h3 {
+
+    font-size: 40px;
+    color: $color_4;
+    margin-bottom: 10px;
+
+}
+
+#skills_container p {
+
+    font-size: 24px;
+    color: $color_1;
 
 }
 
@@ -20,7 +38,7 @@
 
 #technologies_wrapper {
 
-    @include flex_direction_align_justify(row, none, center);
+    @include flex_direction_align_justify(column, none, center);
     flex-wrap: wrap;
 
 }
@@ -29,5 +47,76 @@
 .skill_icon {
 
     @include flex_direction_align_justify(column, center, center);
+    width: 14.28%;
+    text-align: center;
+    color: $secondary_color;
+    margin-bottom: 3em;
+}
+
+.skills_row {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2em;
+    flex-wrap: wrap;
+
+}
+
+/* Media Queries */ 
+
+@media only screen and (max-width: 1448px) {
+
+    #skills_wrapper {
+
+        width: 75%;
+    
+      }
+    
+}
+
+@media only screen and (max-width: 1182px) {
+
+    #skills_wrapper {
+
+        width: 85%;
+    
+      }
+
+    .skill_icon {
+
+        width: 25%;
+
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    #skills_wrapper {
+
+        width: 80%;
+    
+      }
+
+}
+
+@media only screen and (max-width: 844px) {
+
+    #skills_wrapper {
+
+        width: 95%;
+    
+      }
+
+}
+
+@media only screen and (max-width: 690px) {
+    
+    .skill_icon {
+
+        width: 33.3%;
+
+    }
 
 }
