@@ -16,9 +16,9 @@ const Home = () => {
             <Angle_Element id1={"angle1"} id2={"inner_angle1"}/>
             <About />
             <Angle_Element id1={"angle2"} id2={"inner_angle2"}/>
-            <Skills />
+            {/* <Skills />
             <Angle_Element id1={"angle3"} id2={"inner_angle3"} />
-            <Portfolio />
+            <Portfolio /> */}
     
         </div>
 

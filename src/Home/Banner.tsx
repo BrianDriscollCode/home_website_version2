@@ -37,75 +37,81 @@ const Banner = () => {
 
             <Nav />
 
-            <div id="tree_branch">
-                <img src="/images/tree_branch.png"  width="250" />
+            <div id="tree_branch_div">
+                <img id="tree_branch" src="/images/tree_branch.png"  width="250" />
             </div>
 
-            <div id="banner_wrapper">
+            <div id="new_banner_wrapper"> 
 
                 <h1> 
 
-                    <span className="banner_title" id="first_banner_line"> Hi, I'm Brian! </span>
-                    {"I'm a "}  
-                        <span className="banner_title"> 
-                            <span id="banner_bold"> Marketer turned Developer </span> 
-                        </span>
-                    {"and a "} 
-                        <span className="banner_title"> 
-                            <span id="banner_switcher"> 
-                                <span 
-                                    id="banner_choice_1"
-                                    className="banner_choice"
-                                    style={{
-                                        opacity: counter === 0 ? '1': '0',
-                                        transform: counter === 0 ? 'translateY(0px)': 'translateY(45px)',
-                                        transition: 'opacity 1s, transform 1s'
-                                    }}
-                                > 
-                                    coffee addict. <SiBuymeacoffee className="banner_image" size={35}/> 
-                                </span>
-                                <span 
-                                    id="banner_choice_2"
-                                    className="banner_choice"
-                                    style={{
-                                        opacity: counter === 1 ? '1': '0',
-                                        transform: counter === 1 ? 'translateY(0px)': 'translateY(45px)',
-                                        transition: 'opacity 1s, transform 1s'
-                                    }}
-                                > 
-                                    fitness enthusiast. <GiWeightLiftingUp className="banner_image" size={35} />
-                                </span>
-                                <span 
-                                    id="banner_choice_3"
-                                    className="banner_choice"
-                                    style={{
-                                        opacity: counter === 2 ? '1': '0',
-                                        transform: counter === 2 ? 'translateY(0px)': 'translateY(45px)',
-                                        transition: 'opacity 1s, transform 1s'
-                                    }}
-                                > 
-                                    problem tackler. <GiMonkeyWrench className="banner_image" size={35} />
-                                </span>
-                                <span 
-                                    id="banner_choice_4"
-                                    className="banner_choice"
-                                    style={{
-                                        opacity: counter === 3 ? '1': '0',
-                                        transform: counter === 3 ? 'translateY(0px)': 'translateY(45px)',
-                                        transition: 'opacity 1s, transform 1s'
-                                    }}
-                                > 
-                                    book nerd. <SiGitbook className="banner_image" size={35} />
-                                </span>
-                            </span> 
-                    </span>
+                    <span id="title_line_1"> Hi, I'm Brian! </span>   
 
-                </h1>
+                    <span id="title_line_2"> I'm a Marketer Turned Developer and </span> 
+
+                    
+
+                    <span id="title_line_3"> 
+                    
+                        <span 
+                            className="description_flip" 
+                            id="description_solver"
+                            style={{
+                                opacity: counter === 0 ? '1': '0',
+                                transform: counter === 0 ? 'translateY(0px)': 'translateY(45px)',
+                                transition: 'opacity 1s, transform 1s'
+                            }}
+                        > 
+                            problem tackler.
+                            <GiMonkeyWrench id="banner_image" size={35} /> 
+                        </span>
+                        
+                        <span 
+                            className="description_flip" 
+                            id="description_solver"
+                            style={{
+                                opacity: counter === 1 ? '1': '0',
+                                transform: counter === 1 ? 'translateY(0px)': 'translateY(45px)',
+                                transition: 'opacity 1s, transform 1s'
+                            }}
+                        > 
+                            coffee addict. 
+                            <SiBuymeacoffee id="banner_image" size={35}/> 
+                        </span>
+                        
+                        <span 
+                            className="description_flip" 
+                            id="description_solver"
+                            style={{
+                                opacity: counter === 2 ? '1': '0',
+                                transform: counter === 2 ? 'translateY(0px)': 'translateY(45px)',
+                                transition: 'opacity 1s, transform 1s'
+                            }}
+                        > 
+                            fitness enthusiast. 
+                            <GiWeightLiftingUp id="banner_image" size={35} /> 
+                        </span>
+                        <span 
+                            className="description_flip" 
+                            id="description_solver"
+                            style={{
+                                opacity: counter === 3 ? '1': '0',
+                                transform: counter === 3 ? 'translateY(0px)': 'translateY(45px)',
+                                transition: 'opacity 1s, transform 1s'
+                            }}
+                        > 
+                            book nerd. 
+                            <SiGitbook id="banner_image" size={35} /> 
+                        </span>
+                    
+                    </span>
+                    
+                </h1> 
 
             </div>
 
-            <div id="coffee_cup">
-                <img src="/images/coffee_cup.png"  width="125" />
+            <div id="coffee_cup_div">
+                <img id="coffee_cup" src="/images/coffee_cup.png"  width="205" />
             </div>
 
         </header>
