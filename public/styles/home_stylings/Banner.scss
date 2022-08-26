@@ -38,6 +38,7 @@
     font-size: 3.8rem;
     padding-top: 2.5em;
     max-width: 1280px;
+    padding-left: 50px;
 
 }
 
@@ -97,7 +98,7 @@
 
     position: absolute;
     z-index: 1;
-    
+
 }
 
 /** Media Queries **/
@@ -115,6 +116,20 @@
 
 @media only screen and (max-width: 992px) {
 
+
+}
+
+@media only screen and (max-width: 905px) {
+
+    #new_banner_wrapper h1 {
+
+        font-size: 3rem;
+        padding-left: 0px;
+   
+    }
+
+    
+    
 
 }
 
@@ -186,12 +201,7 @@
 }
 
 @media only screen and (max-width: 510px) {
-    
-    #coffee_cup {
 
-        bottom: 150px;
-
-    }
 
     //testing
 
@@ -209,7 +219,7 @@
 
     #new_banner_wrapper h1 {
 
-        font-size: 1.7rem;
+        font-size: 2rem;
     
     }
 
@@ -217,6 +227,17 @@
 
 @media only screen and (max-width: 340px) {
     
+    #new_banner_wrapper h1 {
+
+        font-size: 1.7rem;
+    
+    }
+
+    #new_banner_wrapper {
+    
+        padding: 0 12%;
+    }
+
     #tree_branch {
 
         width: 200px;

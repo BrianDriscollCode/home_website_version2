@@ -5,7 +5,7 @@
 
 #portfolio_wrapper {
 
-    width: 65%;
+    width: 55%;
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -88,10 +88,10 @@
     background-color: $color_6;
     padding: 18px 45px 18px 45px;
     border: 0px;
-    border-radius: 10px;
     color: #f4f4f4;
     font-size: 20px;
     font-weight: 500;
+    font-style: italic;
 
 }
 
@@ -171,3 +171,20 @@
     }
 
 }
+
+@media only screen and (max-width: 430px) {
+
+    .portfolio_image img {
+
+        width: 285px !important;
+
+    }
+
+    .portfolio_buttons button {
+
+        padding: 10px 30px 10px 30px;
+        
+    }
+
+}
+

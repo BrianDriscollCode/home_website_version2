@@ -57,3 +57,19 @@
     transform: scaleX(-1);
 
 }
+
+#angle4 {
+ 
+    background-color: $color_9;
+     width: 100%;
+    
+}
+
+#inner_angle4 {
+
+    background-color: $color_4;
+     clip-path: polygon(100% 100%, 100% 0, 0 0);
+     height: 100%;
+     width: 100%;
+
+}
