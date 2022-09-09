@@ -723,8 +723,80 @@ html {
 }
 #contact_section {
   background-color: #f5e5a6;
+  display: flex;
+  justify-content: center;
+}
+
+#contact_wrapper {
+  width: 50%;
+  margin-bottom: 100px;
 }
 
 #contact_wrapper h2 {
   margin-top: 0px;
+}
+
+#bottom_contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* input containers */
+.contact_input_container {
+  background-color: white;
+  margin-top: 10px;
+  width: 500px;
+}
+
+.contact_input_container input {
+  background: grey;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.contact_input_container textarea {
+  cursor: pointer;
+}
+
+/* Targeting single divs */
+#name_div {
+  border-right: solid red;
+  border-bottom: solid red;
+}
+
+#email_div {
+  border-right: solid red;
+  border-bottom: solid red;
+}
+
+#message_div {
+  border-right: solid red;
+  border-bottom: solid red;
+}
+
+/* Targeting single inputs */
+#nameInput {
+  height: 50px;
+  width: 100%;
+  background-color: none;
+}
+
+#emailInput {
+  height: 50px;
+  width: 100%;
+}
+
+#messageInput {
+  height: 200px;
+  width: 98%;
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  resize: none; /*remove the resize handle on the bottom right*/
 }/*# sourceMappingURL=main.css.map */
