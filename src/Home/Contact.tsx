@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Contact = () => {
+
+    const wrapperRef: any = useRef(null);
 
     const [ name, setName ] = useState("");
     const [ email, setEmail ] = useState("");
     const [ message, setMessage ] = useState("");
 
     const [inputType, setInputType] = useState("");
+
+    const handleClickOutside = (e:any) => {
+        if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+          setInputType("");
+        }
+    }; 
+
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutside, false);
+        return () => {
+          document.removeEventListener("click", handleClickOutside, false);
+        };
+      }, []); 
 
     return (
 
@@ -81,18 +96,12 @@ const Contact = () => {
                             >
                             </textarea>
                         </div>
+
+                        <button id="form_submit_button"> Submit </button>
                     </form>
-
-
-                
-                
-
 
             </div>
             
-            
-
-
         </div>
 
     )

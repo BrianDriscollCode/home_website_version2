@@ -15,8 +15,31 @@
 
 #contact_wrapper h2 {
 
+    font-size: 35px;
+    margin-top: 0px;
+    color: $color_8;
+    margin-bottom: 0px;
+
+}
+
+#contact_wrapper h3 {
+
+    font-size: 40px;
+    color: $color_4;
+    margin-bottom: 10px;
     margin-top: 0px;
 
+}
+
+#contact_wrapper p {
+
+    font-size: 18px;
+
+}
+
+.contact_input_container label {
+    padding-left: 10px;
+    position: absolute;
 }
 
 #bottom_contact_container {
@@ -39,20 +62,40 @@
 
 .contact_input_container input {
 
-    background: grey;
+    background: white;
 	color: inherit;
 	border: none;
 	padding: 0;
 	font-size: 20px;
 	cursor: pointer;
 	outline: inherit;
-    
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 5px;
 
 }
 
 .contact_input_container textarea {
 
+    background: white;
     cursor: pointer;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 10px;
+
+}
+
+/* Button */
+
+#form_submit_button {
+
+    margin-top: 15px;
+    padding: 14px 35px 14px 35px;
+    background-color: $color_4;
+    border: none;
+    border-radius: 5px;
+    color: white;
 
 }
 
@@ -104,9 +147,8 @@
 #messageInput {
 
     height: 200px;
-    width: 98%;
+    width: 99.1%;
     border: none;
-    overflow: auto;
     outline: none;
 
     -webkit-box-shadow: none;
